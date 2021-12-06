@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="myLogical" />
-  <meta>
-    <lastUpdated value="2019-11-01T09:29:23.356+11:00" />
-  </meta>
   <text>
     <status value="generated" />
     <div xmlns="http://www.w3.org/1999/xhtml">!-- Snipped for Brevity --&gt;</div>
