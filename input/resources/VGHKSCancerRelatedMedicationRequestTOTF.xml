@@ -1,0 +1,708 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="VGHKS-mcode-cancer-related-medication-request-TOTF" />
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;">
+        <tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top">
+          <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="The logical name of the element">Name</a>
+          </th>
+          <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Information about the use of the element">Flags</a>
+          </th>
+          <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the the element can appear in the instance">Card.</a>
+          </th>
+          <th style="width: 100px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Reference to the type of the element">Type</a>
+          </th>
+          <th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Additional information about the element">Description &amp; Constraints</a>
+            <span style="float: right">
+              <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
+                <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" />
+              </a>
+            </span>
+          </th>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest">MedicationRequest</a>
+            <a name="MedicationRequest"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: black; null" title="This element has or is affected by some invariants (mcode-reason-required)">I</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">0</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">*</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Ordering of medication for patient or group</span>
+            <br />
+            <span style="font-weight:bold">mcode-reason-required: </span>One of reasonCode or reasonReference SHALL be present</td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck12.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_extension_simple.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Simple Extension" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.extension">Slices for extension</a>
+            <a name="MedicationRequest.extension"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">0</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">*</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/extensibility.html#Extension">Extension</a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Extension</span>
+            <br />
+            <span style="font-weight:bold">Slice: </span>Unordered, Open by value:url</td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_slice_item.png" alt="." style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.extension:treatmentIntent" title="Extension URL = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent">mcode-procedure-intent</a>
+            <a name="MedicationRequest.extension"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Procedure Intent Extension</span>
+            <br />
+            <span style="font-weight:bold">URL: </span>
+            <a href="http://hl7.org/fhir/R4/StructureDefinition-mcode-procedure-intent.html">http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-procedure-intent</a>
+            <br />
+            <span style="font-weight:bold">Binding: </span>
+            <a href="ValueSet-mcode-procedure-intent-vs.html">Procedure Intent Value Set</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)</td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck14.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_slice_item.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Slice Item" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.extension:terminationReason" title="Extension URL = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason">mcode-treatment-termination-reason</a>
+            <a name="MedicationRequest.extension"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Treatment Termination Reason Extension</span>
+            <br />
+            <span style="font-weight:bold">URL: </span>
+            <a href="http://hl7.org/fhir/R4/StructureDefinition-mcode-treatment-termination-reason.html">http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-treatment-termination-reason</a>
+            <br />
+            <span style="font-weight:bold">Binding: </span>
+            <a href="ValueSet-mcode-treatment-termination-reason-vs.html">Treatment Termination Reason Value Set</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#required" title="To be conformant, the concept in this element SHALL be from the specified value set.">required</a>)<br /></td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_reference.png" alt="." style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.subject">subject</a>
+            <a name="MedicationRequest.subject"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">1</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">1</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-mcode-cancer-patient.html">Cancer Patient Profile</a>)</td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Who or group medication request is for</span>
+          </td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.requester">requester</a>
+            <a name="MedicationRequest.requester"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy" />
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">1</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">1</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a> | <a href="http://hl7.org/fhir/us/core/STU4/StructureDefinition-us-core-organization.html">US Core Organization Profile</a> | <a href="StructureDefinition-mcode-cancer-patient.html">Cancer Patient Profile</a>)</td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Who/What requested the Request</span>
+          </td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white">
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.reasonCode">reasonCode</a>
+            <a name="MedicationRequest.reasonCode"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">0</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">*</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a style="opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Reason or indication for ordering or not ordering the medication</span>
+            <br />
+            <span style="font-weight:bold">Binding: </span>
+            <a href="ValueSet-mcode-cancer-disorder-vs.html">Cancer Disorder Value Set</a> (<a href="http://hl7.org/fhir/R4/terminologies.html#extensible" title="To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.">extensible</a>)</td>
+        </tr>
+        <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7">
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy">
+            <img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy" />
+            <img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy" />
+            <a href="StructureDefinition-mcode-cancer-related-medication-request-definitions.html#MedicationRequest.reasonReference">reasonReference</a>
+            <a name="MedicationRequest.reasonReference"></a>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">0</span>
+            <span style="opacity: 0.5">..</span>
+            <span style="opacity: 0.5">*</span>
+          </td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-mcode-primary-cancer-condition.html">Primary Cancer Condition Profile</a> | <a href="StructureDefinition-mcode-secondary-cancer-condition.html">Secondary Cancer Condition Profile</a>)</td>
+          <td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">
+            <span style="opacity: 0.5">Condition or observation that supports why the prescription is being written</span>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="5" class="hierarchy">
+            <br />
+            <a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format">
+              <img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit" /> Documentation for this format</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </text>
+  <url value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request" />
+  <version value="1.18.1" />
+  <name value="VGHKSCancerRelatedMedicationRequestTOTF" />
+  <title value="VGHKS Cancer-Related Medication Request Profile" />
+  <status value="draft" />
+  <date value="2021-10-30T17:51:56+00:00" />
+  <publisher value="HL7 International Clinical Interoperability Council" />
+  <contact>
+    <name value="HL7 International Clinical Interoperability Council" />
+    <telecom>
+      <system value="url" />
+      <value value="http://www.hl7.org/Special/committees/cic" />
+    </telecom>
+    <telecom>
+      <system value="email" />
+      <value value="ciclist@lists.HL7.org" />
+    </telecom>
+  </contact>
+  <description value="A record of a medication prescription or consumption associated with cancer treatment. The medication may reported by the prescriber, prescribing organization, or patient. It does not have to be directly observed." />
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166" />
+      <code value="US" />
+      <display value="United States of America" />
+    </coding>
+  </jurisdiction>
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="script10.6" />
+    <uri value="http://ncpdp.org/SCRIPT10_6" />
+    <name value="Mapping to NCPDP SCRIPT 10.6" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationRequest" />
+  <baseDefinition value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationRequest">
+      <path value="MedicationRequest" />
+      <constraint>
+        <key value="mcode-reason-required" />
+        <severity value="warning" />
+        <human value="One of reasonCode or reasonReference SHALL be present" />
+        <expression value="reasonCode.exists() or reasonReference.exists()" />
+        <source value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-medication-request" />
+      </constraint>
+    </element>
+    <element id="MedicationRequest.identifier">
+      <path value="MedicationRequest.identifier" />
+      <short value="醫令序" />
+    </element>
+    <element id="MedicationRequest.identifier.use">
+      <path value="MedicationRequest.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.type">
+      <path value="MedicationRequest.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.value">
+      <path value="MedicationRequest.identifier.value" />
+      <short value="TOTFA.p13, TOTFB.p1" />
+    </element>
+    <element id="MedicationRequest.identifier.period">
+      <path value="MedicationRequest.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.assigner">
+      <path value="MedicationRequest.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status" />
+      <short value="藥囑狀態[active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown](請輸入 completed)" />
+    </element>
+    <element id="MedicationRequest.statusReason">
+      <path value="MedicationRequest.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent" />
+      <short value="藥囑分類 [proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option](請輸入 order)" />
+    </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記" />
+    </element>
+    <element id="MedicationRequest.category.coding">
+      <path value="MedicationRequest.category.coding" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記" />
+    </element>
+    <element id="MedicationRequest.category.coding.version">
+      <path value="MedicationRequest.category.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.category.coding.code">
+      <path value="MedicationRequest.category.coding.code" />
+      <short value="TOTFA.p2, TOTFA.p3, TOTFA.p17, TOTFB.p2" />
+    </element>
+    <element id="MedicationRequest.category.coding.display">
+      <path value="MedicationRequest.category.coding.display" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記 - 中文說明" />
+    </element>
+    <element id="MedicationRequest.category.coding.userSelected">
+      <path value="MedicationRequest.category.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.priority">
+      <path value="MedicationRequest.priority" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.doNotPerform">
+      <path value="MedicationRequest.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reported[x]">
+      <path value="MedicationRequest.reported[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]" />
+      <short value="藥品(項目)代號/醫令代碼" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="MedicationRequest.medication[x].coding">
+      <path value="MedicationRequest.medication[x].coding" />
+      <short value="藥品(項目)代號/醫令代碼" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.version">
+      <path value="MedicationRequest.medication[x].coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.code">
+      <path value="MedicationRequest.medication[x].coding.code" />
+      <short value="TOTFA.p4, TOTFB.p3" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.userSelected">
+      <path value="MedicationRequest.medication[x].coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject" />
+      <short value="患者Resource" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient" />
+      </type>
+    </element>
+    <element id="MedicationRequest.subject.reference">
+      <path value="MedicationRequest.subject.reference" />
+      <short value="患者Resource Link" />
+    </element>
+    <element id="MedicationRequest.subject.type">
+      <path value="MedicationRequest.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject.identifier">
+      <path value="MedicationRequest.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject.display">
+      <path value="MedicationRequest.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter">
+      <path value="MedicationRequest.encounter" />
+      <short value="TOTFA, TOTFB看診紀錄 Resource" />
+    </element>
+    <element id="MedicationRequest.encounter.reference">
+      <path value="MedicationRequest.encounter.reference" />
+      <short value="TOTFA, TOTFB看診紀錄 Resource Link" />
+    </element>
+    <element id="MedicationRequest.encounter.type">
+      <path value="MedicationRequest.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter.identifier">
+      <path value="MedicationRequest.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter.display">
+      <path value="MedicationRequest.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.supportingInformation">
+      <path value="MedicationRequest.supportingInformation" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester" />
+      <min value="0" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performer">
+      <path value="MedicationRequest.performer" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performerType">
+      <path value="MedicationRequest.performerType" />
+      <short value="會診科別" />
+    </element>
+    <element id="MedicationRequest.performerType.coding">
+      <path value="MedicationRequest.performerType.coding" />
+      <short value="會診科別" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.version">
+      <path value="MedicationRequest.performerType.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.code">
+      <path value="MedicationRequest.performerType.coding.code" />
+      <short value="TOTFB.p8" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.userSelected">
+      <path value="MedicationRequest.performerType.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.recorder">
+      <path value="MedicationRequest.recorder" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonCode">
+      <path value="MedicationRequest.reasonCode" />
+      <short value="診療之部位" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding">
+      <path value="MedicationRequest.reasonCode.coding" />
+      <short value="診療之部位" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.version">
+      <path value="MedicationRequest.reasonCode.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.code">
+      <path value="MedicationRequest.reasonCode.coding.code" />
+      <short value="TOTFA.p6" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.userSelected">
+      <path value="MedicationRequest.reasonCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonReference">
+      <path value="MedicationRequest.reasonReference" />
+      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.instantiatesCanonical">
+      <path value="MedicationRequest.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.instantiatesUri">
+      <path value="MedicationRequest.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.basedOn">
+      <path value="MedicationRequest.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.groupIdentifier">
+      <path value="MedicationRequest.groupIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType">
+      <path value="MedicationRequest.courseOfTherapyType" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.insurance">
+      <path value="MedicationRequest.insurance" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.note">
+      <path value="MedicationRequest.note" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction">
+      <path value="MedicationRequest.dosageInstruction" />
+      <short value="藥品說明" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.sequence">
+      <path value="MedicationRequest.dosageInstruction.sequence" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.text">
+      <path value="MedicationRequest.dosageInstruction.text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.additionalInstruction">
+      <path value="MedicationRequest.dosageInstruction.additionalInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.patientInstruction">
+      <path value="MedicationRequest.dosageInstruction.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing">
+      <path value="MedicationRequest.dosageInstruction.timing" />
+      <short value="藥品使用頻率/(藥品)使用頻率" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.event">
+      <path value="MedicationRequest.dosageInstruction.timing.event" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.repeat">
+      <path value="MedicationRequest.dosageInstruction.timing.repeat" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code">
+      <path value="MedicationRequest.dosageInstruction.timing.code" />
+      <short value="藥品使用頻率/(藥品)使用頻率 [BID | TID | QID | AM | PM | QD | QOD | +]" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding" />
+      <short value="藥品使用頻率" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.version">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.code">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.code" />
+      <short value="TOTFA.p7, TOTFB.p6" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.userSelected">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
+      <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site">
+      <path value="MedicationRequest.dosageInstruction.site" />
+      <short value="給藥途徑/作用部位" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding">
+      <path value="MedicationRequest.dosageInstruction.site.coding" />
+      <short value="給藥途徑/作用部位" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.version">
+      <path value="MedicationRequest.dosageInstruction.site.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.code">
+      <path value="MedicationRequest.dosageInstruction.site.coding.code" />
+      <short value="TOTFA.p9, TOTFB.p7" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.userSelected">
+      <path value="MedicationRequest.dosageInstruction.site.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.method">
+      <path value="MedicationRequest.dosageInstruction.method" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.type">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x]" />
+      <short value="藥品用量" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x].value">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x].value" />
+      <short value="TOTFA.p5, TOTFB.p5" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x].comparator">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x].comparator" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.rate[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.rate[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerPeriod">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerPeriod" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerAdministration">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerAdministration" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerLifetime">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerLifetime" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <short value="藥物時間與總量" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.dispenseInterval">
+      <path value="MedicationRequest.dispenseRequest.dispenseInterval" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod" />
+      <short value="執行時間" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.start" />
+      <short value="執行時間-起" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.end" />
+      <short value="執行時間-迄" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
+      <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity" />
+      <short value="總量" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity.value">
+      <path value="MedicationRequest.dispenseRequest.quantity.value" />
+      <short value="TOTFA.p10, TOTFB.p16" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration" />
+      <short value="藥品給藥日份" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.value">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.value" />
+      <short value="TOTFA.p1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.comparator">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer">
+      <path value="MedicationRequest.dispenseRequest.performer" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.priorPrescription">
+      <path value="MedicationRequest.priorPrescription" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.detectedIssue">
+      <path value="MedicationRequest.detectedIssue" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.eventHistory">
+      <path value="MedicationRequest.eventHistory" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
