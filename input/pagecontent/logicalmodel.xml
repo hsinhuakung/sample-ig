@@ -1,0 +1,14 @@
+<div xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas-r5/fhir-single.xsd">
+
+    <div>
+        <p>
+        The logical model represents the cancer report as an abstract data model, independently of FHIR resources. 
+        The model shows the used data set and specifies the data types and the cardinalities of the data elements.
+        </p>
+    </div>
+
+    <div>
+    {% include StructureDefinition-ch-crl-cancerreport-diff.xhtml %}
+    </div>
+</div>

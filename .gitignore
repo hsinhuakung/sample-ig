@@ -1,24 +1,14 @@
-# Temporary folders #
-#####################
-temp
-template
-output
-fsh-generated
-
-# Don't commit this because it's so large #
-###########################################
-/input-cache/org.hl7.fhir.publisher.jar
-/input-cache/publisher.jar
-
-# Windows generated files #
-###########################
-Thumbs.db
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-
-# backup files #
-################
-*.bak
+input-cache/**
+output/**
+temp/**
+template/**
+.vscode/**
+resources/implementationguide/ig-*.*
+org.hl7.*.jar
+*.jar
+qa/**
+txcache/**
+www/*
+!www/package-list.json
+!www/publish.ini
+fsh-generated/**
