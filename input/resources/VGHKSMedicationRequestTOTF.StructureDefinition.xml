@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="VGHKS-MedicationRequest-TOTF" />
+  <url value="https://example.org/fhir/StructureDefinition/VGHKSMedicationRequestTOTF" />
+  <name value="VGHKSMedicationRequestTOTF" />
+  <title value="VGHKS MedicationRequest TOTF Profile" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationRequest" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationRequest" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="MedicationRequest.identifier">
+      <path value="MedicationRequest.identifier" />
+      <short value="醫令序" />
+    </element>
+    <element id="MedicationRequest.identifier.use">
+      <path value="MedicationRequest.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.type">
+      <path value="MedicationRequest.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.value">
+      <path value="MedicationRequest.identifier.value" />
+      <short value="TOTFA.p13, TOTFB.p1" />
+    </element>
+    <element id="MedicationRequest.identifier.period">
+      <path value="MedicationRequest.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.identifier.assigner">
+      <path value="MedicationRequest.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.status">
+      <path value="MedicationRequest.status" />
+      <short value="藥囑狀態[active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown](請輸入 completed)" />
+    </element>
+    <element id="MedicationRequest.statusReason">
+      <path value="MedicationRequest.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.intent">
+      <path value="MedicationRequest.intent" />
+      <short value="藥囑分類 [proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option](請輸入 order)" />
+    </element>
+    <element id="MedicationRequest.category">
+      <path value="MedicationRequest.category" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記" />
+    </element>
+    <element id="MedicationRequest.category.coding">
+      <path value="MedicationRequest.category.coding" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記" />
+    </element>
+    <element id="MedicationRequest.category.coding.version">
+      <path value="MedicationRequest.category.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.category.coding.code">
+      <path value="MedicationRequest.category.coding.code" />
+      <short value="TOTFA.p2, TOTFA.p3, TOTFA.p17, TOTFB.p2" />
+    </element>
+    <element id="MedicationRequest.category.coding.display">
+      <path value="MedicationRequest.category.coding.display" />
+      <short value="醫令調劑方式/醫令類別/慢性病連續處方箋、同一療程及排程檢查案件註記 - 中文說明" />
+    </element>
+    <element id="MedicationRequest.category.coding.userSelected">
+      <path value="MedicationRequest.category.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.priority">
+      <path value="MedicationRequest.priority" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.doNotPerform">
+      <path value="MedicationRequest.doNotPerform" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reported[x]">
+      <path value="MedicationRequest.reported[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.medication[x]">
+      <path value="MedicationRequest.medication[x]" />
+      <short value="藥品(項目)代號/醫令代碼" />
+      <type>
+        <code value="CodeableConcept" />
+      </type>
+    </element>
+    <element id="MedicationRequest.medication[x].coding">
+      <path value="MedicationRequest.medication[x].coding" />
+      <short value="藥品(項目)代號/醫令代碼" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.version">
+      <path value="MedicationRequest.medication[x].coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.code">
+      <path value="MedicationRequest.medication[x].coding.code" />
+      <short value="TOTFA.p4, TOTFB.p3" />
+    </element>
+    <element id="MedicationRequest.medication[x].coding.userSelected">
+      <path value="MedicationRequest.medication[x].coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject">
+      <path value="MedicationRequest.subject" />
+      <short value="患者Resource" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-patient" />
+      </type>
+    </element>
+    <element id="MedicationRequest.subject.reference">
+      <path value="MedicationRequest.subject.reference" />
+      <short value="患者Resource Link" />
+    </element>
+    <element id="MedicationRequest.subject.type">
+      <path value="MedicationRequest.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject.identifier">
+      <path value="MedicationRequest.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.subject.display">
+      <path value="MedicationRequest.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter">
+      <path value="MedicationRequest.encounter" />
+      <short value="TOTFA, TOTFB看診紀錄 Resource" />
+    </element>
+    <element id="MedicationRequest.encounter.reference">
+      <path value="MedicationRequest.encounter.reference" />
+      <short value="TOTFA, TOTFB看診紀錄 Resource Link" />
+    </element>
+    <element id="MedicationRequest.encounter.type">
+      <path value="MedicationRequest.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter.identifier">
+      <path value="MedicationRequest.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.encounter.display">
+      <path value="MedicationRequest.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.supportingInformation">
+      <path value="MedicationRequest.supportingInformation" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.authoredOn">
+      <path value="MedicationRequest.authoredOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.requester">
+      <path value="MedicationRequest.requester" />
+      <min value="0" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performer">
+      <path value="MedicationRequest.performer" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performerType">
+      <path value="MedicationRequest.performerType" />
+      <short value="會診科別" />
+    </element>
+    <element id="MedicationRequest.performerType.coding">
+      <path value="MedicationRequest.performerType.coding" />
+      <short value="會診科別" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.version">
+      <path value="MedicationRequest.performerType.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.code">
+      <path value="MedicationRequest.performerType.coding.code" />
+      <short value="TOTFB.p8" />
+    </element>
+    <element id="MedicationRequest.performerType.coding.userSelected">
+      <path value="MedicationRequest.performerType.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.recorder">
+      <path value="MedicationRequest.recorder" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonCode">
+      <path value="MedicationRequest.reasonCode" />
+      <short value="診療之部位" />
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding">
+      <path value="MedicationRequest.reasonCode.coding" />
+      <short value="診療之部位" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.version">
+      <path value="MedicationRequest.reasonCode.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.code">
+      <path value="MedicationRequest.reasonCode.coding.code" />
+      <short value="TOTFA.p6" />
+    </element>
+    <element id="MedicationRequest.reasonCode.coding.userSelected">
+      <path value="MedicationRequest.reasonCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.reasonReference">
+      <path value="MedicationRequest.reasonReference" />
+      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="MedicationRequest.instantiatesCanonical">
+      <path value="MedicationRequest.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.instantiatesUri">
+      <path value="MedicationRequest.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.basedOn">
+      <path value="MedicationRequest.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.groupIdentifier">
+      <path value="MedicationRequest.groupIdentifier" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.courseOfTherapyType">
+      <path value="MedicationRequest.courseOfTherapyType" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.insurance">
+      <path value="MedicationRequest.insurance" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.note">
+      <path value="MedicationRequest.note" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction">
+      <path value="MedicationRequest.dosageInstruction" />
+      <short value="藥品說明" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.sequence">
+      <path value="MedicationRequest.dosageInstruction.sequence" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.text">
+      <path value="MedicationRequest.dosageInstruction.text" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.additionalInstruction">
+      <path value="MedicationRequest.dosageInstruction.additionalInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.patientInstruction">
+      <path value="MedicationRequest.dosageInstruction.patientInstruction" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing">
+      <path value="MedicationRequest.dosageInstruction.timing" />
+      <short value="藥品使用頻率/(藥品)使用頻率" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.event">
+      <path value="MedicationRequest.dosageInstruction.timing.event" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.repeat">
+      <path value="MedicationRequest.dosageInstruction.timing.repeat" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code">
+      <path value="MedicationRequest.dosageInstruction.timing.code" />
+      <short value="藥品使用頻率/(藥品)使用頻率 [BID | TID | QID | AM | PM | QD | QOD | +]" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding" />
+      <short value="藥品使用頻率" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.version">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.code">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.code" />
+      <short value="TOTFA.p7, TOTFB.p6" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.timing.code.coding.userSelected">
+      <path value="MedicationRequest.dosageInstruction.timing.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.asNeeded[x]">
+      <path value="MedicationRequest.dosageInstruction.asNeeded[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site">
+      <path value="MedicationRequest.dosageInstruction.site" />
+      <short value="給藥途徑/作用部位" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding">
+      <path value="MedicationRequest.dosageInstruction.site.coding" />
+      <short value="給藥途徑/作用部位" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.version">
+      <path value="MedicationRequest.dosageInstruction.site.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.code">
+      <path value="MedicationRequest.dosageInstruction.site.coding.code" />
+      <short value="TOTFA.p9, TOTFB.p7" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.site.coding.userSelected">
+      <path value="MedicationRequest.dosageInstruction.site.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.method">
+      <path value="MedicationRequest.dosageInstruction.method" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.type">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.type" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x]" />
+      <short value="藥品用量" />
+      <type>
+        <code value="Quantity" />
+      </type>
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x].value">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x].value" />
+      <short value="TOTFA.p5, TOTFB.p5" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.dose[x].comparator">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.dose[x].comparator" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.doseAndRate.rate[x]">
+      <path value="MedicationRequest.dosageInstruction.doseAndRate.rate[x]" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerPeriod">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerPeriod" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerAdministration">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerAdministration" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dosageInstruction.maxDosePerLifetime">
+      <path value="MedicationRequest.dosageInstruction.maxDosePerLifetime" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest">
+      <path value="MedicationRequest.dispenseRequest" />
+      <short value="藥物時間與總量" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.dispenseInterval">
+      <path value="MedicationRequest.dispenseRequest.dispenseInterval" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod" />
+      <short value="執行時間" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.start">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.start" />
+      <short value="執行時間-起" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.validityPeriod.end">
+      <path value="MedicationRequest.dispenseRequest.validityPeriod.end" />
+      <short value="執行時間-迄" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed">
+      <path value="MedicationRequest.dispenseRequest.numberOfRepeatsAllowed" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity">
+      <path value="MedicationRequest.dispenseRequest.quantity" />
+      <short value="總量" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.quantity.value">
+      <path value="MedicationRequest.dispenseRequest.quantity.value" />
+      <short value="TOTFA.p10, TOTFB.p16" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration" />
+      <short value="藥品給藥日份" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.value">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.value" />
+      <short value="TOTFA.p1" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.expectedSupplyDuration.comparator">
+      <path value="MedicationRequest.dispenseRequest.expectedSupplyDuration.comparator" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.dispenseRequest.performer">
+      <path value="MedicationRequest.dispenseRequest.performer" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.substitution">
+      <path value="MedicationRequest.substitution" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.priorPrescription">
+      <path value="MedicationRequest.priorPrescription" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.detectedIssue">
+      <path value="MedicationRequest.detectedIssue" />
+      <max value="0" />
+    </element>
+    <element id="MedicationRequest.eventHistory">
+      <path value="MedicationRequest.eventHistory" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

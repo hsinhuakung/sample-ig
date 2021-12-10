@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="VGHKS-Procedure" />
+  <url value="https://example.org/fhir/StructureDefinition/VGHKSProcedure" />
+  <name value="VGHKSProcedure" />
+  <title value="VGHKS Procedure Profile" />
+  <status value="draft" />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Procedure" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Procedure" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Procedure">
+      <path value="Procedure" />
+      <constraint>
+        <key value="mcode-reason-required" />
+        <severity value="warning" />
+        <human value="One of reasonCode or reasonReference SHALL be present" />
+        <expression value="reasonCode.exists() or reasonReference.exists()" />
+        <source value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-cancer-related-surgical-procedure" />
+      </constraint>
+    </element>
+    <element id="Procedure.identifier">
+      <path value="Procedure.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.instantiatesCanonical">
+      <path value="Procedure.instantiatesCanonical" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.instantiatesUri">
+      <path value="Procedure.instantiatesUri" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.basedOn">
+      <path value="Procedure.basedOn" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.partOf">
+      <path value="Procedure.partOf" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.statusReason">
+      <path value="Procedure.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.category">
+      <path value="Procedure.category" />
+      <max value="0" />
+      <patternCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct" />
+          <code value="387713003" />
+        </coding>
+      </patternCodeableConcept>
+    </element>
+    <element id="Procedure.code">
+      <path value="Procedure.code" />
+      <short value="主手術(處置)代碼" />
+    </element>
+    <element id="Procedure.code.coding">
+      <path value="Procedure.code.coding" />
+      <short value="主手術(處置)代碼" />
+    </element>
+    <element id="Procedure.code.coding.version">
+      <path value="Procedure.code.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.code.coding.code">
+      <path value="Procedure.code.coding.code" />
+      <short value="TOTFA.d24, TOTFB.d45" />
+    </element>
+    <element id="Procedure.code.coding.display">
+      <path value="Procedure.code.coding.display" />
+      <short value="主手術(處置)代碼 - 中文說明" />
+    </element>
+    <element id="Procedure.code.coding.userSelected">
+      <path value="Procedure.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.subject">
+      <path value="Procedure.subject" />
+      <short value="患者Resource" />
+    </element>
+    <element id="Procedure.subject.reference">
+      <path value="Procedure.subject.reference" />
+      <short value="患者Resource Link" />
+    </element>
+    <element id="Procedure.subject.type">
+      <path value="Procedure.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.subject.identifier">
+      <path value="Procedure.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.subject.display">
+      <path value="Procedure.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.encounter">
+      <path value="Procedure.encounter" />
+      <short value="看診紀錄 Resource" />
+    </element>
+    <element id="Procedure.encounter.reference">
+      <path value="Procedure.encounter.reference" />
+      <short value="看診紀錄 Resource Link" />
+    </element>
+    <element id="Procedure.encounter.type">
+      <path value="Procedure.encounter.type" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.encounter.identifier">
+      <path value="Procedure.encounter.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.encounter.display">
+      <path value="Procedure.encounter.display" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.performed[x]">
+      <path value="Procedure.performed[x]" />
+      <short value="就醫日期/治療結束日期/入院年月日/出院年月日，使用Period(start: TOTFA.d9, TOTFB.d10;  end: TOTFA.d10, TOTFB.d11)" />
+    </element>
+    <element id="Procedure.recorder">
+      <path value="Procedure.recorder" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.asserter">
+      <path value="Procedure.asserter" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.performer">
+      <path value="Procedure.performer" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.location">
+      <path value="Procedure.location" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.reasonCode">
+      <path value="Procedure.reasonCode" />
+      <max value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.reasonReference">
+      <path value="Procedure.reasonReference" />
+      <max value="0" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-primary-cancer-condition" />
+        <targetProfile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-secondary-cancer-condition" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite">
+      <path value="Procedure.bodySite" />
+      <max value="0" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite.extension">
+      <path value="Procedure.bodySite.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="0" />
+    </element>
+    <element id="Procedure.bodySite.extension:locationQualifier">
+      <path value="Procedure.bodySite.extension" />
+      <sliceName value="locationQualifier" />
+      <short value="General location qualifier (excluding laterality) for this bodySite" />
+      <definition value="General location qualifier (excluding laterality) for this bodySite" />
+      <min value="0" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.bodySite.extension:lateralityQualifier">
+      <path value="Procedure.bodySite.extension" />
+      <sliceName value="lateralityQualifier" />
+      <short value="Laterality qualifier (excluding laterality) for this bodySite" />
+      <definition value="Laterality qualifier (excluding laterality) for this bodySite" />
+      <min value="0" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Procedure.outcome">
+      <path value="Procedure.outcome" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.report">
+      <path value="Procedure.report" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complication">
+      <path value="Procedure.complication" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.complicationDetail">
+      <path value="Procedure.complicationDetail" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.followUp">
+      <path value="Procedure.followUp" />
+      <short value="次手術(處置)代碼" />
+    </element>
+    <element id="Procedure.followUp.coding">
+      <path value="Procedure.followUp.coding" />
+      <short value="次手術(處置)代碼" />
+    </element>
+    <element id="Procedure.followUp.coding.version">
+      <path value="Procedure.followUp.coding.version" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.followUp.coding.code">
+      <path value="Procedure.followUp.coding.code" />
+      <short value="TOTFA.d25, TOTFA.d26, TOTFB.d46, TOTFB.d47, TOTFB.d48, TOTFB.d49" />
+    </element>
+    <element id="Procedure.followUp.coding.display">
+      <path value="Procedure.followUp.coding.display" />
+      <short value="次手術(處置)代碼 - 中文說明" />
+    </element>
+    <element id="Procedure.followUp.coding.userSelected">
+      <path value="Procedure.followUp.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.note">
+      <path value="Procedure.note" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.focalDevice">
+      <path value="Procedure.focalDevice" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedReference">
+      <path value="Procedure.usedReference" />
+      <max value="0" />
+    </element>
+    <element id="Procedure.usedCode">
+      <path value="Procedure.usedCode" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>
