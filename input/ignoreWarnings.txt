@@ -1,12 +1,5 @@
 == Suppressed Messages ==
 
-# The following code systems/value sets are external
-The value provided ('rm-CH') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#rm-CH) is not valid in the value set CommonLanguages)
-Code System URI 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' is unknown so the code cannot be validated
-Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
-Unknown System specified, so Concepts and Filters can''t be checked
-Error from server: Unable to provide support for code system http://fhir.de/CodeSystem/dimdi/icd-10-gm
-[Unable to determine whether the provided codes are in the value set http://fhir.ch/ig/ch-crl/ValueSet/nkrs-topographymetastasesatdiagnosis because the value set or a code system it depends on is not known to the validator, Code System URI 'http://fhir.de/CodeSystem/dimdi/icd-10-gm' is unknown so the code cannot be validated]
-
-# Specific names are required
-eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+# Add warning and/or information messages here after you've confirmed that they aren't really a problem
+# (And include comments like this justifying why)
+# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples

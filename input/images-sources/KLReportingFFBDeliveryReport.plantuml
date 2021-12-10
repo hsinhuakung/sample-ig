@@ -1,0 +1,46 @@
+@startuml DeliveryReport
+'left to right direction
+
+rectangle "DeliveryReport" as report
+
+rectangle "Citizen" as citizen
+rectangle "ServiceRequest" as request
+
+rectangle "InformationGathering" as information
+
+rectangle "CarePlan" as careplan
+
+rectangle "InterventionGoal" as goal
+rectangle "FollowUpEncounter" as encounter
+
+rectangle "Condition" as condition
+
+rectangle "CarePlanEvaluation" as careplanevaluation
+
+rectangle "TargetGroup" as targetgroup
+
+rectangle "Intervention" as intervention
+rectangle "ServicePerformer" as provider
+
+rectangle "FollowUp" as followup
+
+report -- citizen
+report --"*" information
+report --"*" careplan
+
+information -->"finding *" condition
+information -->"investigation" careplanevaluation
+
+' request "basedon"<- information
+information -->"basedOn" request
+careplan -->"goal *\n" goal
+careplan -->"outcome" careplanevaluation
+careplan -->"addresses *" targetgroup
+careplan "basedon"<-- intervention
+careplan -->"careteam *" provider
+careplan "focus"<-- followup
+condition "addresses"<-- goal
+
+careplan -->"followUpDate" encounter
+goal ->"followUpDate" encounter
+@enduml
